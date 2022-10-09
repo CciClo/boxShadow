@@ -28,6 +28,7 @@ h1 {
   font-size: 4vw;
   text-align: center;
   font-weight: 700;
+  margin: 5px;
 }
 
 @media (max-width: 480px) {
@@ -38,7 +39,6 @@ h1 {
 
 /* header */
 header {
-  height: 8vw;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -47,7 +47,6 @@ header {
 
 @media (max-width: 480px) {
   header {
-    height: 14vw;
     grid-template-columns: 0.5fr 1.5fr;
   }
 }
