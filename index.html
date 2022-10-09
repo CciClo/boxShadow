@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="https://github.com/CciClo/boxShadow" target="_blank">GitHub</a>
+      <h1>Box Shadow Generator</h1>
+    </header>
+
+    <div class="container-Divisor">
+      <section>
+        <div class="container-items">
+          <label for="">
+            Horizontal offset
+            <div class="pixels">
+              <input type="number" name="" class="input-number horizontal-offset-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="horizontal-offset-range disable" min="-100">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Vertical offset
+            <div class="pixels">
+              <input type="number" name="" class="input-number vertical-offset-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="vertical-offset-range disable" min="-100">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Blur radius
+            <div class="pixels">
+              <input type="number" name="" class="input-number blur-radius-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="blur-radius-range disable" max="200">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Spread radius
+            <div class="pixels">
+              <input type="number" name="" class="input-number spread-radius-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="spread-radius-range disable" min="-100">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Inset
+            <input type="checkbox" name="" class="inset-chec-box">
+          </label>
+        </div>
+        <div class="container-items">
+          <label for="">
+            Color
+            <label for="">
+              paint
+              <input type="checkbox" name="" id="checkbox-paint" checked="true">
+            </label>
+          </label>
+          <input type="text" name="" id="" class="pain-off">
+          <input type="color" name="" class="color-selection paint-on">
+        </div>
+      </section>
+
+      <main>
+        <div class="display-box-shadow"></div>
+      </main>
+
+      <section>
+        <div class="container-items">
+          <label for="">
+            Generated Style 
+          </label>
+          <p class="generated-style">box-shadow: 0px 0px 0px 0px rgb(0,0,0);</p> 
+        </div>
+        <div class="container-items">
+          <label for="">
+            Container Background Color
+            <p type="number" name="" class="container-background-color-text"></p>
+          </label>
+          <input type="color" name="" class="color-selection container-background-color-paint">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Box edge radius
+            <div class="pixels">
+              <input type="number" name="" class="input-number border-radius-box-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="border-radius-box-range disable" max="400">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Box Width
+            <div class="pixels">
+              <input type="number" name="" class="input-number box-width-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="box-width-box-range disable" max="400">
+        </div>
+        <div class="container-items">
+          <label for="">
+            Box height
+            <div class="pixels">
+              <input type="number" name="" class="input-number box-height-text">
+              <p>px</p>
+            </div>
+          </label>
+          <input type="range" name="" class="box-height-range disable" max="400">
+        </div>
+        <div class="container-items">
+          <label for="">
+            box background color
+            <p type="number" name="" class="box-color-text"></p>
+          </label>
+          <input type="color" name="" class="color-selection box-color-paint">
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+  </body>
+  <script src="./scripts/app.js"></script>
+</html>
